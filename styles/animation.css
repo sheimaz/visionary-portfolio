@@ -1,0 +1,112 @@
+/********************Animation-Calls***************************/
+
+.fourth-section__card-icon:hover {
+  animation: 1s anim-circle ease-out;
+}
+
+.second-section__card:hover {
+  animation: 1s anim-card ease-out;
+}
+
+.third-section__item-img:hover {
+  animation: 1s anim-circle ease-out;
+}
+
+/**********************FADE-IN-&-TRANSITION-ANIMATION*********************/
+
+.lineUp-1 {
+  animation: 1s anim-lineUp ease-out;
+}
+
+.lineUp-2 {
+  animation: 2s anim-lineUp ease-out;
+}
+
+.lineUp-3 {
+  animation: 3s anim-lineUp ease-out;
+}
+
+.lineUp-4 {
+  animation: 4s anim-lineUp ease-out;
+}
+
+@keyframes anim-lineUp {
+  0% {
+    opacity: 0;
+    transform: translateY(80%);
+  }
+
+  20% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+/**********************FADE-IN-ANIMATION*********************/
+
+.opacity-1 {
+  animation: 1s anim-opacity ease-out;
+}
+
+.opacity-2 {
+  animation: 2s anim-opacity ease-out;
+}
+
+.opacity-3 {
+  animation: 3s anim-opacity ease-out;
+}
+
+.opacity-4 {
+  animation: 3s anim-opacity ease-out;
+}
+
+@keyframes anim-opacity {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+
+/**********************TRANSLATE-ANIMATION*********************/
+
+@keyframes anim-card {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-20px);
+  }
+}
+
+/**********************SCALE-ANIMATION*********************/
+
+@keyframes anim-circle {
+  0% {
+    transform: scale(100%);
+  }
+
+  100% {
+    transform: scale(105%);
+  }
+}
+
+/**********************TEXT-BORDER************************/
+
+.glow {
+  text-shadow: -1px 1px 0 #fff, 1px 1px 0 #fff, 1px -1px 0 #fff,
+    -1px -1px 0 #fff;
+}

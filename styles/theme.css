@@ -1,0 +1,16 @@
+:root {
+  --primary-color: #fed136;
+  --secondary-color: #fff;
+  --bg-primary-color: #fff;
+  --bg-secondary-color: #f7f7f7;
+  --text-primary-color: #000;
+  --text-secondary-color: #fff;
+  --text-sub-color: #777;
+}
+
+.dark-theme {
+  --bg-primary-color: #222;
+  --bg-secondary-color: #333;
+  --text-primary-color: #fff;
+  --text-secondary-color: #000;
+}

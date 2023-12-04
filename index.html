@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EPI Project</title>
+  <link href="styles/style.css" rel="stylesheet" />
+  <link href="styles/theme.css" rel="stylesheet" />
+  <link href="styles/animation.css" rel="stylesheet" />
+  <link href="styles/responsive.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="bg-image"></div>
+  <div class="container">
+    <!---------------------------------------------------------------------------------------------------->
+    <!-------------------------------------------------HEADER SECTION-------------------------------------->
+    <!---------------------------------------------------------------------------------------------------->
+
+    <header class="header-section" id="section-home">
+      <!-------------Logo------------->
+      <div class="header-section__logo opacity-2">
+        <h1>EPI Project</h1>
+      </div>
+      <!-------------Nav-Bar------------->
+      <nav class="header-section__nav-bar opacity-3 header-section__nav">
+        <input type="checkbox" id="nav-check" />
+        <div class="header-section__nav-btn">
+          <label for="nav-check">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+        </div>
+        <ul id="nav-text" class="header-section__nav-links">
+          <li><a href="#section-home">Home</a></li>
+          <li><a href="#section-Services">Services</a></li>
+          <li><a href="#section-Portfolio">Portfolio</a></li>
+          <li><a href="#section-About">About</a></li>
+          <li><a href="#section-Contact">Contact</a></li>
+          <li><img src="./assets/images/moon.png" id="dark-icon" /></li>
+        </ul>
+      </nav>
+      <!-------------Main-Text------------->
+      <div class="header-section__text-bloc">
+        <p class="header-section__text-bloc-first lineUp-1" id="header-text">
+          Welcome To Our Studio!
+        </p>
+        <p class="header-section__text-bloc-second lineUp-2" id="header-sub">
+          It's nice to meet you
+        </p>
+        <button onclick="openSignInModal('signinModal')" class="btn btn-primary lineUp-4">Sign In</button>
+        <div class="modal-footer">
+          <p>Not a member? <a href="#" onclick="openSignUpModal('signupModal')">Sign Up</a></p>
+          <p>Forgot <a href="#">Password?</a></p>
+        </div>
+      </div>
+    </header>
+
+    <!---------------------------------------------------------------------------------------------------->
+    <!-------------------------------------------------SERVICES SECTION-------------------------------------->
+    <!---------------------------------------------------------------------------------------------------->
+
+    <section class="first-section" id="section-Services">
+      <!-------------Section-Title------------->
+      <div class="section__text-bloc">
+        <p class="section__text-bloc-first opacity-2">Services</p>
+        <p class="section__text-bloc-second opacity-4">
+          Proin iaculis purus consequat sem cure.
+        </p>
+      </div>
+      <!-------------First-Container(FLEX)------------->
+      <div class="first-section__card-container">
+        <!-------------First-Item------------->
+        <div class="first-section__card">
+          <img src="assets/images/service/e-commerce-icon.png" alt="E commerce icon" class="first-section__card-icon" />
+          <p class="first-section__card-text">E-commerce</p>
+          <p class="first-section__card-sub-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
+            voluptatibus voluptatibus totam commodi corporis.
+          </p>
+        </div>
+        <!-------------Second-Item------------->
+        <div class="first-section__card">
+          <img src="assets/images/service/responsive-web-icon.png" alt="E commerce icon"
+            class="first-section__card-icon" />
+          <p class="first-section__card-text">Responsive web</p>
+          <p class="first-section__card-sub-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
+            voluptatibus voluptatibus totam commodi corporis.
+          </p>
+        </div>
+        <!-------------Third-Item------------->
+        <div class="first-section__card">
+          <img src="assets/images/service/web-security-icon.png" alt="E commerce icon"
+            class="first-section__card-icon" />
+          <p class="first-section__card-text">Web security</p>
+          <p class="first-section__card-sub-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
+            voluptatibus voluptatibus totam commodi corporis.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!---------------------------------------------------------------------------------------------------->
+    <!-------------------------------------------------OUR PORTFOLIO-------------------------------------->
+    <!---------------------------------------------------------------------------------------------------->
+
+    <section class="second-section" id="section-Portfolio">
+      <!-------------Section-Title------------->
+      <div class="section__text-bloc">
+        <p class="section__text-bloc-first opacity-2">Our Portfolio</p>
+        <p class="section__text-bloc-second opacity-4">
+          Proin iaculis purus consequat sem cure.
+        </p>
+      </div>
+      <!-------------Card-Container(GRID)------------->
+      <div class="second-section__container">
+        <div class="second-section__cards">
+          <!-------------Card------------->
+          <div class="second-section__cards_item">
+            <div class="second-section__card">
+              <div class="second-section__card_image">
+                <img src="assets/images/portfolio/ebony-card.png" />
+              </div>
+              <h2 class="second-section__card_title">Ebony & Ivory</h2>
+              <p class="second-section__card_text">Branding</p>
+            </div>
+          </div>
+          <!-------------Card------------->
+          <div class="second-section__cards_item">
+            <div class="second-section__card">
+              <div class="second-section__card_image">
+                <img src="assets/images/portfolio/smart-card.png" />
+              </div>
+              <h2 class="second-section__card_title">Smart Stationary</h2>
+              <p class="second-section__card_text">Print Design</p>
+            </div>
+          </div>
+          <!-------------Card------------->
+          <div class="second-section__cards_item">
+            <div class="second-section__card">
+              <div class="second-section__card_image">
+                <img src="assets/images/portfolio/clever-card.png" />
+              </div>
+              <h2 class="second-section__card_title">Clever Poster</h2>
+              <p class="second-section__card_text">Print Design</p>
+            </div>
+          </div>
+          <!-------------Card------------->
+          <div class="second-section__cards_item">
+            <div class="second-section__card">
+              <div class="second-section__card_image">
+                <img src="assets/images/portfolio/vinyl-card.png" />
+              </div>
+              <h2 class="second-section__card_title">Vinyl Records</h2>
+              <p class="second-section__card_text">Product Mock-Up</p>
+            </div>
+          </div>
+          <!-------------Card------------->
+          <div class="second-section__cards_item">
+            <div class="second-section__card">
+              <div class="second-section__card_image">
+                <img src="assets/images/portfolio/treehouse-card.png" />
+              </div>
+              <h2 class="second-section__card_title">Treehouse Template</h2>
+              <p class="second-section__card_text">Web Design</p>
+            </div>
+          </div>
+          <!-------------Card------------->
+          <div class="second-section__cards_item">
+            <div class="second-section__card">
+              <div class="second-section__card_image">
+                <img src="assets/images/portfolio/burned-card.png" />
+              </div>
+              <h2 class="second-section__card_title">Burned Logo</h2>
+              <p class="second-section__card_text">Branding</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!---------------------------------------------------------------------------------------------------->
+    <!-------------------------------------------------ABOUT US------------------------------------------->
+    <!---------------------------------------------------------------------------------------------------->
+
+    <section class="third-section" id="section-About">
+      <!-------------Section-Title------------->
+      <div class="section__text-bloc">
+        <p class="section__text-bloc-first opacity-2">About Us</p>
+        <p class="section__text-bloc-second opacity-4">
+          Proin iaculis purus consequat sem cure.
+        </p>
+      </div>
+      <!-------------Items-Container------------->
+      <div class="third-section__cont">
+        <div class="third-section__items">
+          <!-------------Item------------->
+          <div class="third-section__item item-block-left">
+            <div class="thrid-section__item-block-text">
+              <p class="third-section__item-block-title">
+                <span class="third-section__item-block-title">JULY 2010</span>
+                <br />
+                Our Humble Beginnings
+              </p>
+              <p class="third-section__item-block-desp">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Rerum debitis omnis deleniti voluptas laudantium tenetur
+                consequuntur. Aut velit eum rerum voluptatem reprehenderit
+                praesentium impedit accusamus? Omnis quos eum sint, explicabo
+                illum ipsam? Assumenda corrupti soluta officiis nesciunt.
+              </p>
+            </div>
+            <img src="assets/images/about/humber-circle.png" alt="" class="third-section__item-img" />
+          </div>
+          <!-------------Item------------->
+          <div class="third-section__item item-block-right">
+            <img src="assets/images/about/facing-circle.png" alt="" class="third-section__item-img" />
+            <div class="thrid-section__item-block-text">
+              <p class="third-section__item-block-title">
+                <span class="third-section__item-block-title">JANUARY 2011</span>
+                <br />
+                Facing Startup Battles
+              </p>
+              <p class="third-section__item-block-desp">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Rerum debitis omnis deleniti voluptas laudantium tenetur
+                consequuntur. Aut velit eum rerum voluptatem reprehenderit
+                praesentium impedit accusamus? Omnis quos eum sint, explicabo
+                illum ipsam? Assumenda corrupti soluta officiis nesciunt.
+              </p>
+            </div>
+          </div>
+          <!-------------Item------------->
+          <div class="third-section__item item-block-left">
+            <div class="thrid-section__item-block-text">
+              <p class="third-section__item-block-title">
+                <span class="third-section__item-block-title">DECEMBER 2012</span>
+                <br />
+                Enter The Dark Days
+              </p>
+              <p class="third-section__item-block-desp">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Rerum debitis omnis deleniti voluptas laudantium tenetur
+                consequuntur. Aut velit eum rerum voluptatem reprehenderit
+                praesentium impedit accusamus? Omnis quos eum sint, explicabo
+                illum ipsam? Assumenda corrupti soluta officiis nesciunt.
+              </p>
+            </div>
+            <img src="assets/images/about/enter-circle.png" alt="" class="third-section__item-img" />
+          </div>
+          <!-------------Item------------->
+          <div class="third-section__item item-block-right">
+            <img src="assets/images/about/triumph-circle.png" alt="" class="third-section__item-img" />
+            <div class="thrid-section__item-block-text">
+              <p class="third-section__item-block-title">
+                <span class="third-section__item-block-title">FEBRUARY 2014</span>
+                <br />
+                Our Triumph
+              </p>
+              <p class="third-section__item-block-desp">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Rerum debitis omnis deleniti voluptas laudantium tenetur
+                consequuntur. Aut velit eum rerum voluptatem reprehenderit
+                praesentium impedit accusamus? Omnis quos eum sint, explicabo
+                illum ipsam? Assumenda corrupti soluta officiis nesciunt.
+              </p>
+            </div>
+          </div>
+          <!-------------Item------------->
+          <div class="third-section__item item-block-right">
+            <img src="assets/images/about/story-circle.png" alt="" class="third-section__item-img" />
+          </div>
+          <div class="third-section__item-bar"></div>
+        </div>
+      </div>
+    </section>
+
+    <!---------------------------------------------------------------------------------------------------->
+    <!-------------------------------------------------OUR AMAZING TEAM-------------------------------------->
+    <!---------------------------------------------------------------------------------------------------->
+
+    <section class="fourth-section">
+      <!-------------Section-Title------------->
+      <div class="section__text-bloc">
+        <p class="section__text-bloc-first opacity-2">Our Amazing Team</p>
+        <p class="section__text-bloc-second opacity-4">
+          Proin iaculis purus consequat sem cure.
+        </p>
+      </div>
+      <!-------------Item-Container(FLEX)------------->
+      <div class="fourth-section_flex-cont">
+        <div class="fourth-section__card-container">
+          <!-------------First-Item------------->
+          <div class="fourth-section__card">
+            <img src="assets/images/user.jpeg" alt="E commerce icon" class="fourth-section__card-icon" />
+            <p class="fourth-section__card-text">Shaima Zouai</p>
+            <p class="fourth-section__card-sub-text">Front End Developer</p>
+            <!-------------Socials------------->
+            <div class="fourth-section__social">
+              <img src="assets/images/social/twitter.png" alt="E commerce icon" class="fourth-section__card-social" />
+              <img src="assets/images/social/facebook.png" alt="E commerce icon" class="fourth-section__card-social" />
+              <img src="assets/images/social/printest.png" alt="E commerce icon" class="fourth-section__card-social" />
+            </div>
+          </div>
+          <!-------------Second-Item------------->
+          <div class="fourth-section__card">
+            <img src="assets/images/user.jpeg" alt="E commerce icon" class="fourth-section__card-icon" />
+            <p class="fourth-section__card-text">Shaima Zouai</p>
+            <p class="fourth-section__card-sub-text">Full Stack Developer</p>
+            <!-------------Socials------------->
+            <div class="fourth-section__social">
+              <img src="assets/images/social/twitter.png" alt="E commerce icon" class="fourth-section__card-social" />
+              <img src="assets/images/social/facebook.png" alt="E commerce icon" class="fourth-section__card-social" />
+              <img src="assets/images/social/printest.png" alt="E commerce icon" class="fourth-section__card-social" />
+            </div>
+          </div>
+          <!-------------Third-Item------------->
+          <div class="fourth-section__card">
+            <img src="assets/images/user.jpeg" alt="E commerce icon" class="fourth-section__card-icon" />
+            <p class="fourth-section__card-text">Shaima Zouai</p>
+            <p class="fourth-section__card-sub-text">Back End Developer</p>
+            <!-------------Socials------------->
+            <div class="fourth-section__social">
+              <img src="assets/images/social/twitter.png" alt="E commerce icon" class="fourth-section__card-social" />
+              <img src="assets/images/social/facebook.png" alt="E commerce icon" class="fourth-section__card-social" />
+              <img src="assets/images/social/printest.png" alt="E commerce icon" class="fourth-section__card-social" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-------------Bottom-Paragraph------------->
+      <p class="fourth-section__paragraph">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil,
+        accusamus quos. Ipsum similique perspiciatis.
+      </p>
+    </section>
+    <!---------------------------------------------------------------------------------------------------->
+    <!------------------------------------------------SPONSORS-SECTION------------------------------------>
+    <!---------------------------------------------------------------------------------------------------->
+    <section class="logo-sponsor">
+      <!-------------Sponsors------------->
+      <img src="assets/images/logo/envato.png" alt="envato logo" />
+      <img src="assets/images/logo/WordPress.png" alt="wordpress logo" />
+      <img src="assets/images/logo/tuts.png" alt="tuts+ logo" />
+      <img src="assets/images/logo/microlancer.png" alt="microlancer logo" />
+    </section>
+    <!---------------------------------------------------------------------------------------------------->
+    <!--------------------------------------------------MAP-SECTION--------------------------------------->
+    <!---------------------------------------------------------------------------------------------------->
+    <footer class="footer-section" id="section-Contact">
+      <div class="footer-section__container">
+        <div class="section__text-bloc footer-section__text-fix">
+          <p class="section__text-bloc-first opacity-2" style="color: white">
+            Contact Us
+          </p>
+          <p class="section__text-bloc-second opacity-4">
+            Proin iaculis purus consequat sem cure.
+          </p>
+        </div>
+        <form class="footer-section__form">
+          <div class="footer-section__form-container">
+            <div class="footer-section__inputs">
+              <input type="text" name="name" placeholder="YOUR NAME *" />
+              <input type="email" name="email" placeholder="YOUR E-MAIL *" />
+              <input type="text" name="subject" placeholder="SUBJECT" />
+            </div>
+            <textarea class="footer-section__text-area">
+                YOUR MESSAGE...</textarea>
+          </div>
+          <input type="submit" value="SEND MESSAGE" class="btn btn-primary" />
+        </form>
+      </div>
+      <div class="footer-section__contacts">
+        <img src="assets/images/social/twitter.png" alt="E commerce icon" class="fourth-section__card-social" />
+        <img src="assets/images/social/facebook.png" alt="E commerce icon" class="fourth-section__card-social" />
+        <img src="assets/images/social/printest.png" alt="E commerce icon" class="fourth-section__card-social" />
+      </div>
+    </footer>
+  </div>
+  <!-- Sign In Modal -->
+  <div id="signinModal" class="modal">
+    <div class="signinModal-content">
+      <h2>Sign In</h2>
+      <form>
+        <div>
+          <div>
+            <label for="username">Username:</label>
+          </div>
+          <input type="text" id="username" name="username" required>
+        </div>
+        <div>
+          <div>
+            <label for="password">Password:</label>
+          </div>
+          <input type="password" id="password" name="password" required>
+        </div>
+
+        <button type="button" onclick="login()" class="loginbutton">Login</button>
+      </form>
+      <button onclick="closeModal('signinModal')" class="close close:hover">x</button>
+    </div>
+  </div>
+
+  <!-- sign-up modal -->
+  <div id="signupModal" class="modal">
+    <div class="signupModal-content">
+      <span class="close" onclick="closeModal('signupModal')">&times;</span>
+      <h2>Sign Up</h2>
+      <form>
+        <div>
+          <div>
+            <label for="username">Username:</label>
+          </div>
+          <input type="text" id="username" name="username" required>
+        </div>
+        <div>
+          <div>
+            <label for="email">Email:</label>
+          </div>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div>
+          <div>
+            <label for="password">Password:</label>
+          </div>
+          <input type="password" id="password" name="password" required>
+        </div>
+
+        <button type="button" onclick="login()" class="loginbutton">Sign Up</button>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    var dark = document.getElementById('dark-icon');
+    dark.onclick = function () {
+      document.body.classList.toggle('dark-theme');
+      //document.getElementById('header-text').classList.toggle('glow');
+      //document.getElementById('header-sub').classList.toggle('glow');
+      //document.getElementById('nav-text').classList.toggle('glow');
+      if (document.body.classList.contains('dark-theme')) {
+        dark.src = 'assets/images/sun.png';
+      } else {
+        dark.src = 'assets/images/moon.png';
+      }
+    };
+    // Function to open the modal
+    function openSignInModal(modalId) {
+      var modal = document.getElementById(modalId);
+      modal.style.display = 'block';
+    }
+
+    // Function to close the modal
+    function closeModal(modalId) {
+      var modal = document.getElementById(modalId);
+      modal.style.display = 'none';
+    }
+
+    // Close the modal if the user clicks outside of it
+    window.onclick = function (event) {
+      var modals = document.getElementsByClassName('modal');
+      for (var i = 0; i < modals.length; i++) {
+        var modal = modals[i];
+        if (event.target === modal) {
+          modal.style.display = 'none';
+        }
+      }
+    };
+    // Function to open the sign-up modal
+    function openSignUpModal(modalId) {
+      var modal = document.getElementById(modalId);
+      modal.style.display = 'block';
+    }
+
+    // Function to close the sign-up modal
+    function closeSignUpModal(modalId) {
+      var modal = document.getElementById(modalId);
+      modal.style.display = 'none';
+    }
+  </script>
+</body>
+
+</html>

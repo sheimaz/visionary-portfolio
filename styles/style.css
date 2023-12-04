@@ -1,0 +1,576 @@
+/*fonts from google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/*Local fonts */
+@font-face {
+  font-family: 'DroidSerif';
+  src: url('assets/fonts/DroidSerif-Bold.ttf');
+  src: url('assets/fonts/DroidSerif-BoldItalic.ttf');
+  src: url('assets/fonts/DroidSerif-Italic.ttf');
+  src: url('assets/fonts/DroidSerif.ttf');
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-primary-color);
+}
+
+#dark-icon {
+  width: 3rem;
+  cursor: pointer;
+  padding-top: 3.7rem;
+}
+
+.bg-image {
+  background-image: url('../assets/images/bg-img.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 120vh;
+  background-size: cover;
+  margin-top: -20vh;
+}
+
+.container {
+  /* position: absolute;
+    width: 70%;
+    text-align: center;
+    left: 50%;
+    top:5em;
+    transform:translateX(-50%); */
+  margin-top: -100vh;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+}
+
+.header-section {
+  height: 100vh;
+  margin-top: 5rem;
+}
+
+.header-section__text-bloc {
+  text-align: center;
+  padding-top: 30vh;
+  color: var(--text-secondary-color);
+}
+
+.header-section__logo {
+  float: left;
+  color: var(--primary-color);
+  margin-left: -10rem;
+  font-size: 1.8rem;
+}
+
+.header-section__nav-bar {
+  float: right;
+  margin-right: -6rem;
+  margin-top: -1rem;
+}
+
+.header-section__nav-bar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.header-section__nav-bar li {
+  float: left;
+}
+
+.header-section__nav-bar a {
+  display: block;
+  color: var(--text-secondary-color);
+  text-align: center;
+  padding: 4.2rem 2.5rem;
+  text-decoration: none;
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.header-section__nav>.header-section__nav-btn {
+  display: none;
+}
+
+.header-section__nav>#nav-check {
+  display: none;
+}
+
+.header-section__text-bloc-first {
+  font-family: 'DroidSerif', sans-serif;
+  font-size: 4rem;
+  font-style: italic;
+}
+
+.header-section__text-bloc-second {
+  font-size: 8rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-top: -1rem;
+}
+
+.btn {
+  padding: 2rem 5rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-primary {
+  color: white;
+  background-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+  background-color: #f9d967;
+}
+
+.section__text-bloc {
+  margin-top: 15rem;
+}
+
+.section__text-bloc-first {
+  font-size: 5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--text-primary-color);
+}
+
+.section__text-bloc-second {
+  font-family: 'DroidSerif', sans-serif;
+  color: var(--text-sub-color);
+  font-style: italic;
+  margin-top: -3rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.first-section {
+  margin-top: -5rem;
+}
+
+.first-section__card-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 5rem;
+}
+
+.first-section__card {
+  width: 35rem;
+  height: 30rem;
+  margin: 3rem;
+  line-height: 2.5rem;
+}
+
+.first-section__card-text {
+  color: var(--text-primary-color);
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.first-section__card-sub-text {
+  font-family: 'DroidSerif', sans-serif;
+  color: var(--text-sub-color);
+  font-weight: 500;
+  font-size: 1.6rem;
+}
+
+.second-section {
+  background-color: var(--bg-secondary-color);
+  width: 100%;
+}
+
+.second-section__cards {
+  row-gap: 3rem;
+  column-gap: 2rem;
+  justify-content: center;
+}
+
+.second-section__container {
+  max-width: 120rem;
+  margin: 10rem auto;
+}
+
+.second-section__container h1 {
+  font-size: 2.4rem;
+  font-weight: 400;
+  text-align: center;
+}
+
+.second-section__container img {
+  height: auto;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.second-section__cards {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.second-section__cards_item {
+  display: flex;
+  padding: 1.6rem;
+}
+
+.second-section__card {
+  background-color: white;
+  box-shadow: 0 2rem 4rem -1.4rem rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.second-section__card_title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-transform: capitalize;
+  margin-top: 3rem;
+  margin-bottom: 0;
+}
+
+.second-section__card_text {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 3rem;
+  font-weight: 400;
+  color: var(--text-sub-color);
+  font-family: 'DroidSerif', sans-serif;
+  font-style: italic;
+}
+
+.third-section__cont {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.third-section__item {
+  margin-top: 5rem;
+  display: flex;
+  flex-wrap: wrap;
+  cursor: pointer;
+}
+
+.thrid-section__item-block-text {
+  margin-top: 5rem;
+  width: 40rem;
+}
+
+.item-block-left {
+  text-align: right;
+}
+
+.item-block-right {
+  text-align: left;
+  margin-left: 40rem;
+}
+
+.third-section {
+  width: 100%;
+}
+
+.third-section__item-block-title {
+  color: var(--text-primary-color);
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.third-section__item-block-desp {
+  font-family: 'DroidSerif', sans-serif;
+  color: var(--text-sub-color);
+  font-weight: 500;
+  font-size: 1.4rem;
+}
+
+.third-section__item-img {
+  margin: 6rem 2rem 0 2rem;
+  border: 5px solid #f1f1f1;
+  border-radius: 50%;
+  width: 20rem;
+  height: 20rem;
+  z-index: 9999;
+}
+
+.third-section__items {
+  position: relative;
+  z-index: 999;
+}
+
+.third-section__item-bar {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 140rem;
+  width: 0.3rem;
+  background-color: #f1f1f1;
+}
+
+.fourth-section {
+  background-color: var(--bg-secondary-color);
+  width: 100%;
+  margin-top: 10rem;
+}
+
+.fourth-section__card-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 5rem;
+}
+
+.fourth-section__card {
+  width: 35rem;
+  height: 30rem;
+  margin: 3rem;
+  line-height: 2.5rem;
+}
+
+.fourth-section__card-text {
+  color: var(--text-primary-color);
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.fourth-section__card-sub-text {
+  font-family: 'DroidSerif', sans-serif;
+  color: var(--text-sub-color);
+  font-weight: 500;
+  font-size: 1.6rem;
+}
+
+.fourth-section_flex-cont {
+  width: 70%;
+  margin: auto;
+}
+
+.fourth-section__card-icon {
+  width: 17rem;
+  height: 17rem;
+  border-radius: 50%;
+}
+
+.fourth-section__card-social {
+  cursor: pointer;
+  width: 5rem;
+  height: 5rem;
+}
+
+.fourth-section__paragraph {
+  margin-top: 10rem;
+  text-align: center;
+  margin-bottom: 10rem;
+  font-size: 1.6rem;
+  color: var(--text-sub-color);
+}
+
+.logo-sponsor {
+  margin: 5rem 0;
+}
+
+.logo-sponsor img {
+  margin: 2rem;
+  width: 20rem;
+}
+
+.footer-section__map {
+  /* background-color:black; */
+  width: 100vw;
+  background-image: url('../assets/images/map.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: auto;
+}
+
+.footer-section {
+  width: 100vw;
+  background-color: #222;
+}
+
+.footer-section__container {
+  width: 100%;
+  background-image: url('../assets/images/map.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.footer-section__text-fix {
+  margin-top: 0;
+  padding: 5rem;
+}
+
+.footer-section__form {
+  width: 70%;
+}
+
+.footer-section__form-container {
+  display: flex;
+  margin-bottom: 3rem;
+}
+
+.footer-section__inputs {
+  width: 50%;
+}
+
+.footer-section__inputs input {
+  width: 100%;
+  padding: 2rem 2rem;
+  margin: 1rem 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-weight: 700;
+}
+
+.footer-section__inputs input::placeholder {
+  color: rgb(180, 180, 180);
+}
+
+.footer-section__text-area {
+  width: 50%;
+  height: 21.5rem;
+  padding: 1.2rem 2rem;
+  margin: 1rem 0 0 5rem;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  color: rgb(180, 180, 180);
+  font-weight: 700;
+  resize: none;
+  font-size: 1.8rem;
+}
+
+.footer-section__contacts {
+  margin-top: 10rem;
+  padding: 1rem 0;
+  background-color: var(--bg-primary-color);
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+  padding-top: 60px;
+}
+
+.signinModal-content {
+  background-color: #fefefe;
+  margin: 5% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 36%;
+  height: 33%;
+  position: relative;
+}
+
+.signupModal-content {
+  background-color: #fefefe;
+  margin: 5% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 36%;
+  height: 41%;
+  position: relative;
+}
+
+.close {
+  color: red;
+  font-size: 24px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  background-color: white;
+
+}
+
+.close:hover {
+  color: darkred;
+}
+
+form {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 5px;
+  font-size: large;
+}
+
+input {
+  padding: 11px;
+  margin-bottom: 35px;
+  width: 92%;
+}
+
+button {
+  padding: 10px;
+  cursor: pointer;
+  border: none;
+}
+
+.loginbutton {
+  color: white;
+  background-color: green;
+  margin-top: 13px;
+  margin-left: 446px;
+  margin-right: 27px;
+
+}
+
+.modal-footer {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.modal-footer p {
+  margin: 0;
+  display: inline-block;
+}
+
+.modal-footer a {
+  color: #007bff;
+  text-decoration: none;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.modal-footer a:hover {
+  text-decoration: underline;
+}
